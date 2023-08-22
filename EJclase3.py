@@ -113,21 +113,21 @@ while True:
             while op1 != 4 and range (0,5):
                 if men2 == 1:
                     cc = input(int("Ingrese la cèdula del paciente del cual desea la informaciòn,\nevite incluir puntos (.) o espacios de por medio"))
-                    if cc == p.verCedula:
+                    if cc == p.verCedula():
                         print(BD.get(cc,"No esta en la Base de Datos").verNombre()) ;"""""no entiendo muy bien ESTA lìnea"""""
                     else: 
                         print("La información correspondinte a la cédula que busca no se encuentra en la sección de los pacientes")
               
                 if men2 == 2:
                       cc = input(int("Ingrese la cèdula del paciente del cual desea la informaciòn,\nevite incluir puntos (.) o espacios de por medio"))
-                      if cc == e.verCedula:
+                      if cc == e.verCedula():
                             print(BD.get(cc,"No esta en la Base de Datos").verNombre()) 
                       else: 
                            print("La información correspondinte a la cédula que busca no se encuentra en la sección del personal de enfermería")
 
                 if men2 ==3:
                       cc = input(int("Ingrese la cèdula del paciente del cual desea la informaciòn,\nevite incluir puntos (.) o espacios de por medio"))
-                      if cc == m.verCedula:
+                      if cc == m.verCedula():
                         print(BD.get(cc,"No esta en la Base de Datos").verNombre())
                       else: 
                            print("La información correspondinte a la cédula que busca no se encuentra en la sección del personal médico")
